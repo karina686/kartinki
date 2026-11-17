@@ -1,0 +1,24 @@
+﻿<Window x:Class="kartinki.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kartinki"
+        mc:Ignorable="d"
+        Title="" Height="450" Width="800">
+    <StackPanel Background="#D3D3D3">
+        <StackPanel Height="60" Orientation="Horizontal" Background="#D3D3D3">
+            <Image Source="/Images/крфон.jpg" Height="50" Margin="5" Width="104"/>
+            <TextBlock Text=" Картинки" FontSize="40" Width="566" FontStyle="Italic" FontWeight="Bold"/>
+            <Image Source="/Images/крфон.jpg" Height="50" Margin="5" Width="117"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="250">
+            <Image x:Name="myImg" Height="256" Width="798"/>
+        </StackPanel>
+        <StackPanel>
+            <Button Content="📂Открыть" Background="#FFD700" Margin="5" Click="Open_Click"/>
+            <Button Content="⬇️Сохранить" Background="#F4A460" Margin="5" Click="Save_Click"/>
+            <Button Content="📝Изменить" Background="#FF6347" Margin="5" Click="Edit_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
